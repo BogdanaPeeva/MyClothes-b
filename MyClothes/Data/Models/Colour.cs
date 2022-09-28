@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace MyClothes.Data.Models
+{
+    public class Colour
+    {
+        [Key]
+        public string ColourId { get; set; } =  Guid.NewGuid().ToString();
+        [StringLength(15)]
+        public string? Name { get; set; }
+    }
+}

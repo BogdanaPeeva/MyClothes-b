@@ -1,0 +1,35 @@
+version: '3.4'
+
+services:
+  sqlserver:
+    container_name: sqlserver
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports: 
+      - "1433:1433"
+    environment:
+        ACCEPT_EULA: "Y"
+        SA_PASSWORD: "S3cur3P@ssW0rd!"
+    volumes: 
+      - sqldata:/var/opt/mssql 
+    networks: 
+      - my_network
+    restart: on-failure
+
+  myclothes:
+    build: .
+    environment:
+      - "ConnectionStrings__DefaultConnection=Server=sqlserver;Database=MyClothes;User=sa;Password=S3cur3P@ssW0rd!;MultipleActiveResultSets=true"
+    ports: 
+      - "8080:80"
+    networks: 
+      - my_network
+    depends_on:
+      - sqlserver
+    restart: on-failure
+
+networks:
+  my_network:
+
+volumes:
+  sqldata:
+    

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyClothes", "MyClothes\MyClothes.csproj", "{8582BC91-CDD5-4DBB-A156-AA0E58A8CF5B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{D01DDA5B-C67C-4294-BC29-D50AD849F048}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8582BC91-CDD5-4DBB-A156-AA0E58A8CF5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8582BC91-CDD5-4DBB-A156-AA0E58A8CF5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8582BC91-CDD5-4DBB-A156-AA0E58A8CF5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8582BC91-CDD5-4DBB-A156-AA0E58A8CF5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D01DDA5B-C67C-4294-BC29-D50AD849F048}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D01DDA5B-C67C-4294-BC29-D50AD849F048}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D01DDA5B-C67C-4294-BC29-D50AD849F048}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D01DDA5B-C67C-4294-BC29-D50AD849F048}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {31FCE094-8031-4EEE-A037-01E692D61CE3}
+	EndGlobalSection
+EndGlobal

@@ -19,7 +19,7 @@ services:
     image: boginp/myserver:0.1
     build: .
     environment:
-      - "ConnectionStrings__DefaultConnection=Server=sqlserver;Database=MyClothes;User=sa;Password=S3cur3P@ssW0rd!;MultipleActiveResultSets=true"
+      - "ConnectionStrings__DefaultConnection=Server=sqlserver;Database=MyClothes;User Id=sa;Password=S3cur3P@ssW0rd!;MultipleActiveResultSets=true"
     ports: 
       - "8080:80"
     networks: 

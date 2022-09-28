@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "mssql1": {
+    "mssql": {
       "type": "mssql.local",
       "connectionId": "ConnectionStrings:DefaultConnection"
     }
